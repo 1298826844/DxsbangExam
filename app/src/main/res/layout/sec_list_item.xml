@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sch_gridview_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="4dp" >
+
+        <ImageView
+            android:id="@+id/pic_sec_item"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/icon_l" />
+
+        <TextView
+            android:id="@+id/name_sec_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pic_sec_item"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="名称"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/time_sec_item"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="剩余：12件"
+            android:textColor="@color/food_sold" 
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/intro_sec_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_sec_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/pic_sec_item"
+            android:maxLines="2"
+            android:textSize="13sp"
+            android:text="简述" 
+            android:textColor="@color/food_intro"/>
+
+        <TextView
+            android:id="@+id/money_sec_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/intro_sec_item"
+            android:layout_alignParentBottom="true"
+            android:text="¥521"
+            android:textColor="#99fd0000"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

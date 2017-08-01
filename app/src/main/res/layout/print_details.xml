@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_common" />
+
+    <include layout="@layout/shop_info_top" />
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="打印店信息"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/name_print_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="打印店店名" />
+
+    <TextView
+        android:id="@+id/locate_print_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="打印店位置" />
+
+    <TextView
+        android:id="@+id/describe_print_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="店铺简介" />
+
+    <TextView
+        android:id="@+id/status_print_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="打印店状态" />
+
+    <TextView
+        android:id="@+id/send_print_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="可送状态" />
+    <TextView
+        android:id="@+id/phone_print_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="联系电话" />
+    </LinearLayout>
+    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:padding="5dp"
+        android:text="填写打印信息"
+        android:textColor="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/addFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@drawable/add_print"
+            android:gravity="center_vertical"
+            android:text="点击添加文件"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/z1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addFile"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打印数量："
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/numEdit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ll_bg_c"
+                android:inputType="number"
+                android:padding="5dp"
+                android:selectAllOnFocus="true"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/z1"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:text="份"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/colorSp"
+            style="@style/CheckboxTheme"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/z1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text=" 彩色"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/doubleSp"
+            style="@style/CheckboxTheme"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/z1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/colorSp"
+            android:text=" 双面"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/sendSp"
+            style="@style/CheckboxTheme"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/z1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/doubleSp"
+            android:text=" 代送"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/timeSp"
+            style="@style/CheckboxTheme"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/z1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/sendSp"
+            android:text=" 尽快"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/infor_frag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/colorSp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/locate_edit"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/acm_inputbox"
+                android:hint="住址"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/phone_edit"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/acm_inputbox"
+                android:hint="联系电话"
+                android:inputType="phone"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/remark_print_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infor_frag"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ll_bg_c"
+            android:hint="备注:默认A4纸"
+            android:padding="5dp"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/printUpText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/search_bg"
+        android:gravity="center"
+        android:text="我要打印"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</LinearLayout>

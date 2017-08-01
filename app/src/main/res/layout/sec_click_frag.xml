@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_bg_c"
+        android:padding="10dp"
+        android:text="喜欢这件物品吗？那就告诉他吧" />
+
+    <EditText
+        android:id="@+id/phone_sec_edit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acm_inputbox"
+        android:hint="手机号"
+        android:inputType="phone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ll_bg_c"
+            android:padding="10dp"
+            android:text="发送" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/ll_bg_c"
+            android:padding="10dp"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

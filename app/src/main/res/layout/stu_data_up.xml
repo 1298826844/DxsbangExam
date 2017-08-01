@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/title_common"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="填写资料信息"
+        android:textColor="@color/gray" />
+    <EditText
+        android:id="@+id/sub_stu_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/sub_icon"
+        android:hint="学科"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp" />
+     <EditText
+        android:id="@+id/actor_stu_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/actor_icon"
+        android:hint="主编"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp" />
+     <EditText
+        android:id="@+id/version_stu_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/ver_icon"
+        android:hint="版本"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:inputType="number" />
+     <com.example.xsb.view.ClearEditView
+        android:id="@+id/src_stu_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/url_icon"
+        android:hint="链接"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:inputType="textUri" />
+     <com.example.xsb.view.ClearEditView
+        android:id="@+id/intro_stu_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/intro_icon"
+        android:hint="简介"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"/>
+     <TextView 
+         android:id="@+id/stuUpText"
+         android:layout_width="match_parent"
+         android:layout_height="35dp"
+         android:layout_margin="20dp"
+         android:gravity="center"
+         android:text="上传"
+         android:textSize="15sp"
+         android:textColor="#fff"
+         android:background="@drawable/search_bg"
+         />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title_common" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="快来邀请你的朋友一起加入我们吧~" />
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/downapp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="扫描二维码即可下载" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:text="点击访问官网：www.dxsbang.cn/app" />
+
+</RelativeLayout>

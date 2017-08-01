@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uploadLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_common" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="填写物品信息"
+        android:textColor="@color/gray" />
+
+    <EditText
+        android:id="@+id/name_sec_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/intro_icon"
+        android:hint="物品名称"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="15sp" 
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <EditText
+        android:id="@+id/intro_sec_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/intro_icon"
+        android:hint="物品简介"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/price_sec_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/price_icon"
+        android:hint="物品价格"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/phone_sec_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/phone_icon"
+        android:hint="联系电话"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="添加图片"
+        android:textColor="@color/gray" />
+
+    <ImageView
+        android:id="@+id/up_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/up_image" />
+
+    <TextView
+        android:id="@+id/secUpText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/search_bg"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</LinearLayout>

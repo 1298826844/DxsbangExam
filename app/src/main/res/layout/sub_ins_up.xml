@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/title_common"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="填写信息"
+        android:textColor="@color/gray" />
+    <EditText
+        android:id="@+id/intro_sub_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/intro_icon"
+        android:hint="简述"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp" />
+    <EditText
+        android:id="@+id/price_sub_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/price_icon"
+        android:hint="酬劳"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:inputType="number" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="填写个人信息"
+        android:textColor="@color/gray" />
+    <EditText
+        android:id="@+id/name_sub_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/actor_icon"
+        android:hint="姓名"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp" />
+    <EditText
+        android:id="@+id/addr_sub_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/locate_icon"
+        android:hint="宿舍住址"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp" />
+    <EditText
+        android:id="@+id/phone_sub_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/phone_icon"
+        android:hint="电话"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:inputType="phone" />
+    <TextView 
+         android:id="@+id/subUpText"
+         android:layout_width="match_parent"
+         android:layout_height="35dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:gravity="center"
+         android:text="提交"
+         android:textSize="15sp"
+         android:textColor="#fff"
+         android:background="@drawable/search_bg"
+         />
+
+</LinearLayout>

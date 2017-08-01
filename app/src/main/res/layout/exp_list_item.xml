@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/sch_gridview_bg"
+    android:padding="5dp"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        >
+        <ImageView
+            android:id="@+id/pic_sec_item"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/exprec_icon"
+            />
+        <TextView 
+            android:id="@+id/intro_exp_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pic_sec_item"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:text="简述"
+            />
+        <TextView 
+            android:id="@+id/money_exp_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="13sp"
+            android:textColor="@color/gray"
+            android:text="¥521"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

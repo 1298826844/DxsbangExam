@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_common" />
+
+    <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" > -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="填写店铺信息"
+        android:textColor="@color/gray" />
+
+    <Spinner
+        android:id="@+id/kind_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ll_bg_c"
+        android:spinnerMode="dialog" />
+
+   <!--  <FrameLayout
+        android:id="@+id/kind_frag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" > -->
+
+        <EditText
+            android:id="@+id/kind_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/acm_inputbox"
+            android:drawableLeft="@drawable/kind_icon"
+            android:hint="店铺类别"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    <!-- </FrameLayout> -->
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/room_icon"
+        android:hint="店铺名称"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+    <com.example.xsb.view.ClearEditView
+            android:id="@+id/describe_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/acm_inputbox"
+            android:drawableLeft="@drawable/intro_icon"
+            android:hint="详细描述(200字以内)"
+            android:maxLines="3"
+            android:paddingLeft="5dp"
+            android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="填写个人信息"
+        android:textColor="@color/gray" />
+    <EditText
+            android:id="@+id/pname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/acm_inputbox"
+            android:drawableLeft="@drawable/actor_icon"
+            android:hint="姓名"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    <EditText
+            android:id="@+id/locate_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/acm_inputbox"
+            android:drawableLeft="@drawable/locate_icon"
+            android:hint="地址"
+            android:maxLength="15"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    
+    <EditText
+            android:id="@+id/phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/acm_inputbox"
+            android:drawableLeft="@drawable/phone_icon"
+            android:hint="联系电话"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" 
+            android:inputType="phone"/>
+    <TextView
+        android:id="@+id/UpText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/search_bg"
+        android:gravity="center"
+        android:text="提交申请"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</LinearLayout>

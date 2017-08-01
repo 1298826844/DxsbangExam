@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_common"/>
+    <ImageView
+        android:id="@+id/login_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/login_picture_bg"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_m" />
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_picture" >
+
+        <LinearLayout
+            android:id="@+id/ll_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/lbs_popup_bg"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editToName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/login_et_bg"
+                android:hint="请输入用户名(大于2个字符)"
+                android:inputType="text"
+                android:maxLength="11"
+                android:padding="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line" />
+
+            <EditText
+                android:id="@+id/editToPass1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/login_et_bg"
+                android:hint="密码(字母、数字大于2个字符)"
+                android:digits="@string/limits"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:padding="5dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line" />
+            <EditText
+                android:id="@+id/editToPass2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/login_et_bg"
+                android:hint="请再次输入密码"
+                android:digits="@string/limits"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnToRegist"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/ll_user_info"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_btn"
+            android:text="注册"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

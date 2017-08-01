@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_common"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="游戏名称："
+        android:textColor="@color/gray"/>
+    <EditText 
+        android:id="@+id/name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acm_inputbox"
+        android:text=""/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="说明："
+        android:textColor="@color/gray"/>
+    <EditText 
+        android:id="@+id/intro_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acm_inputbox"
+        android:text=""/>
+    <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/search_bg"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

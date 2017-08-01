@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/title_common"/>
+    <com.example.xsb.view.ClearEditView
+        android:id="@+id/adviceText"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/white_bg"
+        android:layout_margin="20dp"
+        android:gravity="top"
+        android:hint="想说什么，尽情来吐槽吧~~"
+        android:padding="5dp"
+        android:textSize="15sp" 
+        android:minLines="4"
+        android:maxLines="4"/>
+    <TextView 
+         android:id="@+id/adviceUpText"
+         android:layout_width="match_parent"
+         android:layout_height="35dp"
+         android:layout_margin="20dp"
+         android:gravity="center"
+         android:text="提交"
+         android:textSize="15sp"
+         android:textColor="#fff"
+         android:background="@drawable/search_bg"
+         />
+
+</LinearLayout>

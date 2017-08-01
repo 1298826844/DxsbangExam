@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/sch_gridview_bg"
+    android:padding="10dp" >
+    <TextView 
+        android:id="@+id/printTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/food_intro"
+        android:text="2016-07-07 12:50"/>
+    <TextView 
+        android:id="@+id/printSym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="已接收"/>
+    <TextView 
+        android:id="@+id/printDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/printTime"
+        android:maxLines="1"
+        android:text="黑白，单面，代送，尽快"/>
+    <TextView 
+        android:id="@+id/printNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/printSym"
+        android:text="x10份"/>
+    <TextView 
+        android:id="@+id/printUInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/printDetails"
+        android:text="西四B339,13313071715"/>
+    <TextView 
+        android:id="@+id/printRemark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/printNum"
+        android:text="A5"/>
+</RelativeLayout>

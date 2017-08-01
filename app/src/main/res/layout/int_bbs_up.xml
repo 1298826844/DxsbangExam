@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uploadLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_common"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="填写兴趣信息"
+        android:textColor="@color/gray" />
+
+    <EditText
+        android:id="@+id/title_int_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/intro_icon"
+        android:hint="标签"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <com.example.xsb.view.ClearEditView
+        android:id="@+id/content_int_edit"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="top"
+        android:background="@drawable/acm_inputbox"
+        android:hint="尽情地写出来吧~~(100字以内)"
+        android:padding="5dp"
+        android:textSize="15sp" 
+        android:minLines="4"
+        android:maxLines="4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="添加图片"
+        android:textColor="@color/gray" />
+    <ImageView 
+        android:id="@+id/up_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/up_image"
+        />
+
+    <!-- <EditText
+        android:id="@+id/text_up_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:hint="写下你想说的话吧~"
+        android:maxLines="3"
+        android:minLines="3"
+        android:textSize="15sp" /> -->
+
+    <TextView
+        android:id="@+id/intUpText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/search_bg"
+        android:gravity="center"
+        android:text="发帖"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</LinearLayout>

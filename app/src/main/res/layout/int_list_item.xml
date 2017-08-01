@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sch_gridview_bg"
+    android:padding="5dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="2" >
+
+        <TextView
+            android:id="@+id/title_int_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="标签" />
+
+        <TextView
+            android:id="@+id/describe_int_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_int_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="简述" />
+        <TextView
+            android:id="@+id/time_int_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:textColor="@color/gray"
+            android:text="时间" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1" >
+
+        <ImageView 
+            android:id="@+id/int_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

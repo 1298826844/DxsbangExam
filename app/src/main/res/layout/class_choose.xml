@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="教学楼"
+            android:textSize="20sp" />
+
+        <!--
+             <Spinner
+            android:id="@+id/building_select"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ll_bg_c"
+            android:entries="@array/buildinglist"
+            android:gravity="center"
+            android:spinnerMode="dialog" />
+        -->
+
+        <TextView
+            android:id="@+id/building_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ll_bg_c"
+            android:gravity="center"
+            android:text="北辰▼"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="周次"
+            android:textSize="20sp" />
+
+        <!--
+             <Spinner
+            android:id="@+id/week_select"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ll_bg_c"
+            android:entries="@array/weeklist"
+            android:gravity="center"
+            android:spinnerMode="dialog" />
+        -->
+
+        <TextView
+            android:id="@+id/week_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ll_bg_c"
+            android:gravity="center"
+            android:text="第十七周▼"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="星期"
+            android:textSize="20sp" />
+
+        <!--
+             <Spinner
+            android:id="@+id/date_select"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ll_bg_c"
+            android:entries="@array/datelist"
+            android:gravity="center"
+            android:spinnerMode="dialog" />
+        -->
+
+        <TextView
+            android:id="@+id/day_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ll_bg_c"
+            android:gravity="center"
+            android:text="周一▼"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="节次"
+            android:textSize="20sp" />
+
+        <!--
+             <Spinner
+            android:id="@+id/classes_select"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ll_bg_c"
+            android:entries="@array/classeslist"
+            android:gravity="center"
+            android:spinnerMode="dialog" />
+        -->
+
+        <TextView
+            android:id="@+id/class_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ll_bg_c"
+            android:gravity="center"
+            android:text="第一节▼"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="教室区域"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/area_select"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ll_bg_c"
+            android:entries="@array/arealist"
+            android:gravity="center"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+    -->
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/search_bg"
+        android:gravity="center"
+        android:text="查询"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="3dp"
+        android:text="想要一天都不换教室？试试多选吧~"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+</LinearLayout>

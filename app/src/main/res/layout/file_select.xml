@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+    <RelativeLayout 
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@drawable/title_bg_sky">
+      <!-- <ImageButton 
+          android:id="@+id/MenuAddGridView_button_openfolder"
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_marginLeft="10.0dip"
+          android:src="@drawable/back"
+          android:adjustViewBounds="true"
+          android:padding="10.0dip"
+          android:layout_alignParentLeft="true"/>
+     <ImageButton 
+          android:id="@+id/MenuAddGridView_button_addSingle"
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_marginLeft="10.0dip"
+          android:src="@drawable/ic_launcher"
+          android:adjustViewBounds="true"
+          android:padding="10.0dip"
+          android:layout_toRightOf="@id/MenuAddGridView_button_openfolder"/>
+     <ImageButton 
+          android:id="@+id/MenuAddGridView_button_addFolder"
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_marginLeft="10.0dip"
+          android:src="@drawable/ic_launcher"
+          android:adjustViewBounds="true"
+          android:padding="10.0dip"
+          android:layout_toRightOf="@id/MenuAddGridView_button_addSingle"/> -->
+     <ImageView 
+          android:id="@+id/MenuAddGridView_button_backFolder"
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10.0dip"
+          android:src="@drawable/back"
+          android:adjustViewBounds="true"
+          android:padding="10.0dip"
+          android:layout_alignParentRight="true"/>               
+    </RelativeLayout>  
+    <GridView 
+        android:id="@+id/MenuAddGridView_gridview"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:background="@drawable/sky_bg"
+        android:numColumns="3"
+        android:listSelector="@null"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+    />
+
+</LinearLayout>

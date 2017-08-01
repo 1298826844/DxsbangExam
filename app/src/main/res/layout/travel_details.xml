@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:orientation="vertical">
+
+            <include layout="@layout/shop_info_top" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="填写订票信息"
+                android:textColor="@color/gray" />
+
+            <EditText
+                android:id="@+id/name_travel_edit"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/acm_inputbox"
+                android:hint="姓名"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/phone_travel_edit"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/acm_inputbox"
+                android:hint="手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/date_travel_edit"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/acm_inputbox"
+                android:hint="日期(X月X日)"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" >
+
+                <Spinner
+                    android:id="@+id/locate_spinner"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ll_bg_c"
+                    android:spinnerMode="dialog" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:text="张"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/numEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_toLeftOf="@+id/text"
+                    android:background="@drawable/ll_bg_c"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:selectAllOnFocus="true"
+                    android:text="1" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" >
+
+                <EditText
+                    android:id="@+id/proxy_travel_edit"
+                    android:layout_width="165dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/acm_inputbox"
+                    android:hint="代理号(没有则填000)"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/proxy_travel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="我要当代理"
+                    android:textColor="@color/blue" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/travelUpText"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/search_bg"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

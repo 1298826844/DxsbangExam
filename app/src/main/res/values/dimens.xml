@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">5.0dip</dimen>
+    <dimen name="bottom_tab_font_size">15.0dip</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_12">12.0dip</dimen>
+    <dimen name="vi_margin">15.0dip</dimen>
+    <dimen name="margin_8">8dip</dimen>
+    <integer name="num_cols">1</integer>
+    <dimen name="kind_invent">65dp</dimen>
+    <dimen name="print_details">50dp</dimen>
+
+    <dimen name="print_item_info">18dp</dimen>
+</resources>

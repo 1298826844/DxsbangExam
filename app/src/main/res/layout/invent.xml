@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_common" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#caecf8"
+        android:padding="5dp"
+        android:text="学生店铺"
+        android:textColor="@color/gray" />
+
+        <com.example.xsb.view.StickListView
+            android:id="@+id/shop_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#ccc"
+            android:dividerHeight="0.5dp"
+            android:transcriptMode="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="想要拥有自己的小店吗？点击右上角开始吧~"
+        android:textColor="@color/gray"
+        android:textSize="10sp" />
+
+</LinearLayout>

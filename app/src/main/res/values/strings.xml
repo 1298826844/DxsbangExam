@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">大学生帮</string>
+    <string name="first">广告</string>
+    <string name="second">兼职</string>
+    <string name="third">校园</string>
+    <string name="forth">创意</string>
+    <string name="url_server">http://115.29.105.88/app/version.xml</string>
+    <string name="versionUrl">http://115.29.105.88/app/version.json</string>
+    <string name="version_unknown">无法识别</string>
+    <string name="limits">"0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"</string>
+    
+</resources>

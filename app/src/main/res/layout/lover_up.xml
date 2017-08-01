@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lover_bg" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/windowView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp" >
+
+                <ImageView
+                    android:id="@+id/title_left_image"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/back_color" />
+
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="介绍我给你"
+                    android:textColor="#91278f"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/title_right_image"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="姓名："
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/nameEdit"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:hint="点此输入" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/CheckboxTheme"
+                        android:id="@+id/nanRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text=" 男    "
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        style="@style/CheckboxTheme"
+                        android:id="@+id/nvRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text=" 女" 
+                        android:textSize="18sp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="年龄："
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ageEdit"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:hint="点此输入" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="身高："
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/heightEdit"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:hint="点此输入" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="手机号码："
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/phoneEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:hint="点此输入" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="QQ："
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/qqEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:hint="点此输入" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="个人描述："
+                    android:textSize="18sp" />
+
+                <com.example.xsb.view.ClearEditView
+                    android:id="@+id/introEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:maxLength="100"
+                    android:hint="点此输入(100字以内)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="期待匹配对象类型："
+                    android:textSize="18sp" />
+
+                <com.example.xsb.view.ClearEditView
+                    android:id="@+id/styleEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="8dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:maxLength="50"
+                    android:hint="点此输入(50字以内)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/upBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/finish" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

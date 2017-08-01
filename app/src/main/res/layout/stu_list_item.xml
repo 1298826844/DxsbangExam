@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sch_gridview_bg"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+        <ImageView
+            android:id="@+id/pic_stu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_l"
+            />
+        <TextView
+            android:id="@+id/intro_stu_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pic_stu_item"
+            android:layout_marginTop="5dp"
+            android:text="简介"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/actor_stu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pic_stu_item"
+            android:layout_below="@id/intro_stu_item"
+            android:text="——By"/>
+        <TextView
+            android:id="@+id/time_stu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/actor_stu_item"
+            android:layout_below="@id/intro_stu_item"
+            android:text="20160606"/>
+        <TextView
+            android:id="@+id/support_stu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intro_stu_item"
+            android:layout_alignParentRight="true"
+            android:text="521"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@id/support_stu_item"
+            android:layout_below="@id/intro_stu_item"
+            android:src="@drawable/support_t"/>
+    </RelativeLayout>
+
+</LinearLayout>

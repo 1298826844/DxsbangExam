@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_common" />
+    <LinearLayout 
+        android:id="@+id/web_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/webV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="正在加载..." />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView1"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pageError"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:text="Page Error!"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

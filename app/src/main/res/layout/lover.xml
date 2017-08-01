@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_common" />
+
+    <include layout="@layout/shop_info_top" />
+    <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="信息详情"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:text="名称" />
+
+    <TextView
+        android:id="@+id/intro_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:text="简介" />
+
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:text="电话" />-->
+
+    <Button
+        android:id="@+id/upBtn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/search_bg"
+        android:gravity="center"
+        android:text="我要报名"
+        android:textColor="#fff"
+        android:textSize="15sp" /> 
+
+</LinearLayout>

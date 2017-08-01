@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/title_common"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="填写物品信息"
+        android:textColor="@color/gray" />
+    <com.example.xsb.view.ClearEditView
+        android:id="@+id/intro_lost_edit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:gravity="top"
+        android:background="@drawable/acm_inputbox"
+        android:hint="丢的什么东西呢？让大家来帮你找找吧~~"
+        android:paddingLeft="5dp"
+        android:textSize="15sp" 
+        android:minLines="3"
+        android:maxLines="3"/>
+    <EditText
+        android:id="@+id/phone_lost_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/phone_icon"
+        android:hint="联系电话"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:inputType="phone" />
+    <TextView 
+         android:id="@+id/lostUpText"
+         android:layout_width="match_parent"
+         android:layout_height="35dp"
+         android:layout_margin="20dp"
+         android:gravity="center"
+         android:text="发布"
+         android:textSize="15sp"
+         android:textColor="#fff"
+         android:background="@drawable/search_bg"
+         />
+
+</LinearLayout>

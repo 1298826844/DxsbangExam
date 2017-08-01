@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/title_common"/>
+    <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="选择房间"
+        android:textColor="@color/gray" />
+    <Spinner
+        android:id="@+id/no_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ll_bg_c"
+        android:spinnerMode="dialog" /> -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="添加房间图片"
+        android:textColor="@color/gray" />
+    <ImageView 
+        android:id="@+id/up_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/up_image"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="添加房间简介"
+        android:textColor="@color/gray" />
+    <EditText 
+        android:id="@+id/intro_room_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/acm_inputbox"
+        android:drawableLeft="@drawable/intro_icon"
+        android:hint="简介"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:paddingLeft="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="选择房间状态"
+        android:textColor="@color/gray" />
+    <RadioGroup
+            android:id="@+id/statusGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <RadioButton
+                android:id="@+id/free"
+                style="@style/CheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="空闲" />
+
+            <RadioButton
+                android:id="@+id/busy"
+                style="@style/CheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已租" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/search_bg"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+</LinearLayout>
